@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Mateus</title>
+    <style>
+        body {
+            background-image: url("neve.gif"); /* Gif de fundo  */
+            background-size: cover; /* Gif cobre a tela */
+            background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+            font-family: 'Arial', sans-serif; /* Muda o jeito da fonte  */
+            font-size: 20px; /* Tamanho da fonte */
+            color: #FFFFFF; /* Cor do texto */
+            margin: 0; /* Remove a margem da página */
+            padding: 0; /* Remove o padding da página */
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center; /* Centraliza o título */
+            color: #000000; /* Cor para o título */
+            margin-top: 50px; /* Adiciona margem superior para o título */
+            font-size: 3em; /* Define um tamanho para o título */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adiciona sombra para destaque */
+            padding: 10px; /* Adiciona espaçamento interno */
+            border-radius: 5px; /* Cantos arredondados */
+            text-shadow: -2px -2px 4px rgba(255, 255, 255, 0.8), /* Adiciona sombra nas direções para criar uma borda mais suave */
+                         2px -2px 4px rgba(255, 255, 255, 0.8),
+                         -2px  2px 4px rgba(255, 255, 255, 0.8),
+                         2px  2px 4px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Subtítulo */
+        h2 {
+            text-align: center; /* Centraliza o subtítulo */
+            color: #000000; /* Cor preta */
+            font-size: 2.5em; /* Tamanho grande, mas um pouco menor que o h1 */
+            margin-bottom: 20px; /* Adiciona margem inferior */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra  */
+            padding: 8px; /* Adiciona espaçamento interno */
+            border-radius: 5px; /* Cantos arredondados */
+            text-shadow: -2px -2px 4px rgba(255, 255, 255, 0.8), /* Adiciona sombra nas direções para criar uma borda mais suave */
+                         2px -2px 4px rgba(255, 255, 255, 0.8),
+                         -2px  2px 4px rgba(255, 255, 255, 0.8),
+                         2px  2px 4px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Estilo para as seções com ícones */
+        h3 {
+            color: #A9A9A9; /* Cor cinza para subtítulos */
+            font-size: 1.6em; /* Define o tamanho da fonte */
+            text-transform: uppercase; /* Torna o texto maiúsculo */
+            margin-bottom: 10px; /* Adiciona margem inferior */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+        }
+
+        /* Estilo do texto em itálico */
+        i {
+            color: #008000; /* Cor verde para o texto em itálico */
+            text-shadow: -2px -2px 4px rgba(0, 0, 0, 0.8), /* Adiciona sombra nas direções para criar uma borda mais suave */
+                         2px -2px 4px rgba(0, 0, 0, 0.8),
+                         -2px  2px 4px rgba(0, 0, 0, 0.8),
+                         2px  2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Links */
+        a {
+            color: #4682B4; /* Cor azul para os links */
+            text-decoration: none; /* Remove o sublinhado dos links */
+            transition: color 0.3s ease; /* Adiciona transição suave para a cor do link */
+        }
+
+        a:hover {
+            color: #1E90FF; /* Cor mais claro quando o mouse passa por cima */
+            text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+        }
+
+        /* Estilo das seções */
+        div {
+            margin: 30px auto; /* Adiciona margem para centralizar e um espaçamento entre as seções */
+            padding: 20px; /* Adiciona espaçamento dentro das seções */
+            width: 80%; /* Define a largura das seções */
+            max-width: 1000px; /* Define a largura máxima */
+            border: 6px solid #000000; /* Borda preta ao redor das seções */
+            border-radius: 12px; /* Cantos arredondados */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adiciona sombra para destacar as seções */
+            background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+        }
+
+        /* Ajuste para a lista dentro de cada seção */
+        ul {
+            list-style: none; /* Remove os marcadores da lista */
+            padding-left: 0; /* Remove o padding da lista */
+        }
+
+        li {
+            margin-bottom: 10px; /* Adiciona espaço entre os itens da lista */
+            font-size: 1.2em; /* Tamanho de fonte ligeiramente maior para os itens da lista */
+        }
+
+        /* Melhorando o áudio */
+        audio {
+            width: 100%;
+            border-radius: 12px; /* Borda arredondada */
+            margin-top: 15px; /* Adiciona um pequeno espaço acima do player */
+        }
+
+        /* Efeitos ao passar o mouse nas divs */
+        div:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Intensifica a sombra ao passar o mouse */
+            transition: all 0.3s ease; /* Transição suave para as mudanças de estilo */
+        }
+
+        /* Alinhamento de imagem */
+        img {
+            max-width: 100%; /* Garante que a imagem ocupe a largura disponível sem ultrapassar os limites */
+            height: auto; /* Mantém a proporção original da imagem */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra ao redor da imagem */
+        }
+
+        /* Responsividade para telas pequenas */
+        @media (max-width: 600px) {
+            body {
+                font-size: 16px; /* Fonte menor para telas pequenas */
+            }
+
+            h1 {
+                font-size: 2.5em; /* Tamanho do título menor em telas pequenas */
+            }
+
+            h2 {
+                font-size: 2em; /* Tamanho do subtítulo menor em telas pequenas */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Currículo</h1>
+    <center><img src="mateus.png" width="15%"></center>
+    <h2>Mateus Penalva</h2>
+
+    <div>
+        <h3><i>Música: Veridis Quo</i></h3>
+        <audio controls>
+            <source src="Veridis Quo.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div>
+        <h3><i>Dados Pessoais:</i></h3>
+        <ul>
+            <li>Endereço: Rua A, Condomínio Bela Vista, nº15</li>
+            <li>Celular: <a href="tel:+5575998032025">(75) 99803-2025</a></li>
+            <li>Email: <a href="mailto:mateuspvf@gmail.com">mateuspvf@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/mateus-penalva-a48750317/">Mateus Penalva</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h3><i>Escolaridade:</i></h3>
+        <ul>
+            <li>Sistema de Informação - <a href="https://fsssacramento.br/" target="_blank">F.SS.S</a> - Atual</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3><i>Cursos Extras:</i></h3>
+        <ul>
+            <li>Informática Básica - MEGA CURSO - 04 meses</li>
+            <li>Curso Microsoft Excel Básico - <a href="https://www.ev.org.br">FUNDAÇÃO BRADESCO</a> - 15h</li>
+            <li>Curso de Inglês - <a href="https://cursos.englishevolutionacademy.com.br/products/english-evolution-academy-2-0">ENGLISH EVOLUTION ACADEMY</a> - Atual</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3><i>Experiências Profissionais:</i></h3>
+        <ul>
+            <li>Jovem Aprendiz no setor de RH - <a href="https://rafitec.com.br/" target="_blank">Rafitec</a> - Atual</li>
+        </ul>
+    </div>
+
+    <!-- Botão para baixar o PDF -->
+    <center>
+        <a href="curriculo-mateus.pdf" download>
+            <button style="padding: 10px 20px; font-size: 1em; background-color: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer; box-shadow: 2px 2px 5px rgba(0,0,0,0.3);">
+                📄 Baixar Currículo em PDF
+            </button>
+        </a>
+    </center>
+</body>
+
+</html>
